@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start Development Environment",
+            "type": "shell",
+            "command": "($env:REACT_APP_MES_API = 'https://hou1mesd0/MesApiDev') -and (npm start)",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Start Localhost Environment",
+            "type": "shell",
+            "command": "($env:REACT_APP_MES_API = 'http://localhost:63140') -and (npm start)",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Start Test Environment",
+            "type": "shell",
+            "command": "($env:REACT_APP_MES_API = 'http://hou1mest0/Mes') -and (npm start)",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }]
+}

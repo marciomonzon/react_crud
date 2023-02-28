@@ -1,21 +1,21 @@
+import { BrowserRouter } from 'react-router-dom';
 
-import { ThemeProvider } from "@mui/system";
-import { BrowserRouter } from "react-router-dom";
-import { AppRoutes } from "./routes";
-import { MenuLateral } from "./shared/components";
-import { AppThemeProvider, DrawerProvider } from "./shared/contexts";
-import { DarkTheme, LightTheme } from "./shared/themes";
+import { AppThemeProvider, DrawerProvider } from './shared/contexts';
+import { MenuLateral } from './shared/components';
+import { AppRoutes } from './routes';
 
 export const App = () => {
   return (
     <AppThemeProvider>
       <DrawerProvider>
         <BrowserRouter>
-        <MenuLateral>
+
+          <MenuLateral>
             <AppRoutes />
-        </MenuLateral>
+          </MenuLateral>
+
         </BrowserRouter>
       </DrawerProvider>
-      </AppThemeProvider>
-    );
-}
+    </AppThemeProvider>
+  );
+};

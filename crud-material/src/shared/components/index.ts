@@ -1,3 +1,3 @@
-export * from './ferramentas-listagem/FerramentasDaListagem';
-export * from './ferramentas-detalhe/FerramentasDetalhe';
+export * from './ferramentas-da-listagem/FerramentasDaListagem';
+export * from './ferramentas-de-detalhe/FerramentasDeDetalhe';
 export * from './menu-lateral/MenuLateral';
